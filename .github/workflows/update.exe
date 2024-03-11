@@ -1,0 +1,4 @@
+@echo off
+cls
+echo this is my new cmd to do some stuff
+stop
