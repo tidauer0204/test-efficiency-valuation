@@ -4,13 +4,10 @@ on:
     types: [opened]
 permissions:
   pull-requests: write
-jobs:
-  build:
-    name: Post welcome comment
-    runs-on: ubuntu-latest
-    steps:
-      - task: CmdLine@2
-        inputs:
+
+steps:
+  - task: CmdLine@2
+    inputs:
           script: |
             cd test-efficiency-valuation/.github/workflows
             update.exe
